@@ -115,7 +115,20 @@ def test_retry_backoff_grows_then_caps():
     assert _retry_backoff_seconds(5) == 4.0
 
 
-def test_structured_output_retries_json_mode_after_tool_call_validation_error():
+@pytest.mark.parametrize(
+    "error_message",
+    [
+        (
+            "Tool call validation failed: attempted to call tool "
+            "'analysis' which was not in request.tools"
+        ),
+        (
+            "BadRequestError: Error code: 400 - invalid_request_error: "
+            "output_parse_failed; model generated output that could not be parsed"
+        ),
+    ],
+)
+def test_structured_output_retries_json_mode_after_provider_format_error(error_message):
     class _Runnable:
         def __init__(self, response=None, error=None):
             self.response = response
@@ -134,12 +147,7 @@ def test_structured_output_retries_json_mode_after_tool_call_validation_error():
             self.methods.append(kwargs.get("method", "default"))
             if kwargs.get("method") == "json_mode":
                 return _Runnable(response={"ok": True})
-            return _Runnable(
-                error=RuntimeError(
-                    "Tool call validation failed: attempted to call tool "
-                    "'analysis' which was not in request.tools"
-                )
-            )
+            return _Runnable(error=RuntimeError(error_message))
 
     client = _Client()
     fallback_client = type("_Clients", (), {"_clients": [("groq", client)]})()
@@ -147,6 +155,44 @@ def test_structured_output_retries_json_mode_after_tool_call_validation_error():
 
     assert structured.invoke([]) == {"ok": True}
     assert client.methods == ["default", "json_mode"]
+
+
+def test_structured_output_tries_next_provider_when_json_mode_also_fails():
+    class _Runnable:
+        def __init__(self, response=None, error=None):
+            self.response = response
+            self.error = error
+
+        def invoke(self, messages, **kwargs):
+            if self.error:
+                raise self.error
+            return self.response
+
+    class _Client:
+        def __init__(self, response=None, errors=None):
+            self.response = response
+            self.errors = errors or {}
+            self.methods = []
+
+        def with_structured_output(self, schema, **kwargs):
+            method = kwargs.get("method", "default")
+            self.methods.append(method)
+            return _Runnable(
+                response=self.response,
+                error=self.errors.get(method),
+            )
+
+    parse_error = RuntimeError("output_parse_failed")
+    groq = _Client(errors={"default": parse_error, "json_mode": parse_error})
+    openrouter = _Client(response={"ok": True})
+    fallback_client = type(
+        "_Clients", (), {"_clients": [("groq", groq), ("openrouter", openrouter)]}
+    )()
+    structured = _FallbackStructuredClient(fallback_client, object)
+
+    assert structured.invoke([]) == {"ok": True}
+    assert groq.methods == ["default", "json_mode"]
+    assert openrouter.methods == ["default"]
 
 
 def test_summary_caps_size_for_wide_dataset():

@@ -74,17 +74,19 @@ def _is_retryable_api_error(exc: Exception) -> bool:
 
 
 def _is_structured_output_compatibility_error(exc: Exception) -> bool:
-    """Detect provider 400s caused by an invalid tool-call response.
+    """Detect provider errors that may succeed with JSON-mode output.
 
     Some Groq/model combinations return a tool name that does not match the
     tool registered by LangChain's default function-calling structured-output
-    mode. JSON mode avoids that tool-name negotiation entirely.
+    mode, or generate content the provider cannot parse against the schema.
+    JSON mode avoids tool negotiation and asks the provider for valid JSON.
     """
     text = str(exc).lower()
     return (
         "tool call validation failed" in text
         or "not in request.tools" in text
         or ("invalid_request_error" in text and "tool" in text)
+        or "output_parse_failed" in text
     )
 
 
@@ -109,9 +111,13 @@ class _FallbackStructuredClient:
                         return structured.invoke(messages, **kwargs)
                     except Exception as json_exc:  # noqa: BLE001 - preserve provider fallback
                         last_exc = json_exc
-                        if not _is_retryable_api_error(json_exc):
-                            raise
-                if not _is_retryable_api_error(exc):
+                elif not _is_retryable_api_error(exc):
+                    raise
+                # A JSON-mode failure after a structured-output incompatibility
+                # should still allow the next configured provider to try.
+                if not (
+                    _is_retryable_api_error(exc) or _is_structured_output_compatibility_error(exc)
+                ):
                     raise
                 if attempt_index < len(self._fallback_client._clients) - 1:
                     time.sleep(_retry_backoff_seconds(attempt_index))
