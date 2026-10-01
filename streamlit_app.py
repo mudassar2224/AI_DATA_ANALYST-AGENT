@@ -520,12 +520,4 @@ else:
                     _render_verified_answer(qa_state.verified)
                     st.session_state["chat_history"].append(("assistant", qa_state.verified))
 
-with st.expander("What's not here yet"):
-    st.write(
-        "Built: ingestion, profiling, the quality audit, broad and target-focused "
-        "relationship scans, adaptive charts, a bounded next-best-analysis planner, "
-        "and Groq/OpenRouter + LangGraph loops for grounded findings and chat. Still "
-        "not built: full autonomous model training/comparison, persistent project "
-        "memory, the optional MCP server wrapper, and LangSmith tracing. See "
-        "docs/architecture.md."
-    )
+
