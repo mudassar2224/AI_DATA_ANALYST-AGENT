@@ -1,0 +1,46 @@
+[project]
+name = "dsagent"
+version = "0.1.0"
+description = "Autonomous AI Data Scientist — an agent that understands a dataset before you ask it anything"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "streamlit>=1.40",
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "pyarrow>=17.0",
+    "openpyxl>=3.1",
+    "charset-normalizer>=3.4",
+    "plotly>=5.24",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "scipy>=1.14",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.5",
+    "langgraph>=0.2",
+    "langchain-core>=0.3",
+    "langchain-groq>=0.2",
+    "langchain-openai>=0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=dsagent --cov-report=term-missing"

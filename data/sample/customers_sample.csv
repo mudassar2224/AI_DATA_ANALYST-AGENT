@@ -1,0 +1,263 @@
+customer_id,age,city,contract_type,tenure_months,monthly_charge,signup_date,churn
+CUST-1258,69.0,Lahore,Month-to-month,38,80.59,2025-12-12,True
+CUST-1012,58.0,Karachi,Month-to-month,36,80.36,2021-03-26,True
+CUST-1118,62.0,Karachi,Month-to-month,28,,2023-04-07,True
+CUST-1067,41.0,Lahore,One year,65,65.42,2022-04-15,False
+CUST-1236,25.0,Karachi,Month-to-month,47,50.34,2025-07-11,False
+CUST-1090,33.0,Lahore,One year,29,88.67,2022-09-23,False
+CUST-1232,66.0,Multan,One year,67,65.21,2025-06-13,False
+CUST-1254,41.0,Lahore,Month-to-month,68,70.04,2025-11-14,False
+CUST-1246,53.0,Karachi,Month-to-month,65,80.74,2025-09-19,False
+CUST-1085,30.0,Lahore,One year,60,49.48,2022-08-19,False
+CUST-1257,,Lahore,One year,49,56.75,2025-12-05,False
+CUST-1152,20.0,Lahore,Month-to-month,13,67.94,2023-12-01,True
+CUST-1107,63.0,Lahore,One year,55,67.95,2023-01-20,False
+CUST-1044,27.0,Faisalabad,Two year,15,26.99,2021-11-05,True
+CUST-1174,68.0,Lahore,Month-to-month,6,67.67,2024-05-03,True
+CUST-1038,58.0,Lahore,One year,30,46.85,2021-09-24,False
+CUST-1183,23.0,Lahore,Month-to-month,47,93.06,2024-07-05,False
+CUST-1004,49.0,Lahore,Two year,51,480.0,2021-01-29,False
+CUST-1091,45.0,Islamabad,Month-to-month,48,70.5,2022-09-30,False
+CUST-1058,23.0,Lahore,Month-to-month,3,65.53,2022-02-11,False
+CUST-1168,58.0,Lahore,Month-to-month,21,89.09,2024-03-22,False
+CUST-1034,45.0,Karachi,Two year,34,52.16,2021-08-27,False
+CUST-1073,39.0,Lahore,Two year,21,22.37,2022-05-27,False
+CUST-1158,31.0,Islamabad,Month-to-month,57,70.98,2024-01-12,False
+CUST-1249,18.0,Unknown,Month-to-month,45,81.53,2025-10-10,False
+CUST-1186,26.0,Karachi,Two year,8,35.89,2024-07-26,False
+CUST-1095,48.0,Karachi,One year,5,67.12,2022-10-28,True
+CUST-1188,23.0,Islamabad,Month-to-month,11,83.16,2024-08-09,True
+CUST-1117,40.0,Islamabad,Month-to-month,61,64.3,2023-03-31,False
+CUST-1140,58.0,Karachi,Month-to-month,44,58.34,2023-09-08,False
+CUST-1055,43.0,Islamabad,Month-to-month,6,85.4,2022-01-21,True
+CUST-1093,56.0,Karachi,One year,55,60.69,2022-10-14,False
+CUST-1027,22.0,Lahore,Month-to-month,46,75.56,2021-07-09,False
+CUST-1116,51.0,Islamabad,Two year,9,33.21,2023-03-24,False
+CUST-1039,39.0,Islamabad,One year,60,59.89,2021-10-01,False
+CUST-1194,39.0,Lahore,Month-to-month,46,74.05,2024-09-20,True
+CUST-1197,58.0,Faisalabad,Month-to-month,9,28.97,2024-10-11,True
+CUST-1190,32.0,Multan,Month-to-month,59,72.96,2024-08-23,True
+CUST-1226,34.0,Lahore,Month-to-month,4,85.47,2025-05-02,True
+CUST-1248,43.0,Karachi,Month-to-month,8,71.83,2025-10-03,True
+CUST-1088,64.0,Lahore,One year,40,87.72,2022-09-09,False
+CUST-1163,20.0,Lahore,Month-to-month,55,61.29,2024-02-16,True
+CUST-1161,34.0,Faisalabad,Month-to-month,34,75.56,2024-02-02,False
+CUST-1179,39.0,Islamabad,One year,32,63.06,2024-06-07,False
+CUST-1219,41.0,Karachi,Month-to-month,57,70.48,2025-03-14,False
+CUST-1218,43.0,Multan,One year,39,74.94,2025-03-07,False
+CUST-1123,53.0,Karachi,Month-to-month,38,70.88,2023-05-12,False
+CUST-1145,19.0,Lahore,Two year,22,66.69,2023-10-13,False
+CUST-1051,38.0,Lahore,Month-to-month,32,,2021-12-24,True
+CUST-1031,55.0,Multan,Month-to-month,15,68.88,2021-08-06,True
+CUST-1018,41.0,Faisalabad,Two year,31,34.08,2021-05-07,False
+CUST-1078,44.0,Karachi,Month-to-month,52,87.0,2022-07-01,True
+CUST-1173,28.0,Multan,Two year,62,44.0,2024-04-26,False
+CUST-1119,42.0,Karachi,One year,25,61.35,2023-04-14,False
+CUST-1019,38.0,Unknown,Two year,23,75.55,2021-05-14,False
+CUST-1106,36.0,Karachi,One year,38,66.71,2023-01-13,False
+CUST-1127,64.0,Lahore,Two year,29,48.91,2023-06-09,False
+CUST-1033,59.0,Karachi,Month-to-month,38,82.52,2021-08-20,False
+CUST-1062,36.0,Karachi,Month-to-month,66,73.54,2022-03-11,False
+CUST-1148,,Karachi,Month-to-month,41,76.7,2023-11-03,False
+CUST-1035,69.0,Lahore,Two year,12,55.48,2021-09-03,True
+CUST-1011,36.0,Multan,Month-to-month,26,78.9,2021-03-19,False
+CUST-1029,35.0,Islamabad,Month-to-month,1,51.76,2021-07-23,False
+CUST-1000,57.0,Islamabad,Month-to-month,51,70.16,2021-01-01,False
+CUST-1164,62.0,Karachi,One year,47,75.82,2024-02-23,False
+CUST-1010,45.0,Karachi,Month-to-month,37,87.5,2021-03-12,False
+CUST-1028,53.0,Lahore,One year,24,62.85,2021-07-16,False
+CUST-1016,54.0,Karachi,Month-to-month,32,71.17,2021-04-23,False
+CUST-1217,20.0,Lahore,One year,40,51.61,2025-02-28,False
+CUST-1259,,Karachi,Two year,3,57.3,2025-12-19,False
+CUST-1047,54.0,Lahore,One year,71,76.83,2021-11-26,False
+CUST-1206,65.0,Lahore,One year,62,55.22,2024-12-13,False
+CUST-1040,45.0,Unknown,One year,66,51.55,2021-10-08,False
+CUST-1181,18.0,Faisalabad,Month-to-month,40,76.28,2024-06-21,False
+CUST-1253,50.0,Lahore,Month-to-month,1,78.87,2025-11-07,True
+CUST-1069,50.0,Karachi,Month-to-month,4,54.05,2022-04-29,False
+CUST-1180,25.0,Faisalabad,Two year,47,52.08,2024-06-14,False
+CUST-1114,48.0,Lahore,Month-to-month,22,60.29,2023-03-10,False
+CUST-1252,45.0,Karachi,Month-to-month,32,64.2,2025-10-31,True
+CUST-1184,39.0,Islamabad,Month-to-month,30,74.33,2024-07-12,True
+CUST-1202,29.0,Karachi,Two year,69,58.69,2024-11-15,False
+CUST-1110,21.0,Karachi,One year,27,48.25,2023-02-10,False
+CUST-1059,36.0,Lahore,Two year,31,55.04,2022-02-18,False
+CUST-1132,26.0,Karachi,One year,28,46.44,2023-07-14,False
+CUST-1150,33.0,Faisalabad,One year,30,67.46,2023-11-17,False
+CUST-1239,,Lahore,One year,62,55.24,2025-08-01,False
+CUST-1147,67.0,Karachi,Two year,43,39.93,2023-10-27,False
+CUST-1099,33.0,Multan,One year,39,75.57,2022-11-25,False
+CUST-1102,33.0,Lahore,Month-to-month,67,82.72,2022-12-16,False
+CUST-1014,64.0,Karachi,One year,6,66.77,2021-04-09,False
+CUST-1167,,Unknown,Two year,52,59.41,2024-03-15,False
+CUST-1176,43.0,Karachi,Month-to-month,37,67.62,2024-05-17,True
+CUST-1021,32.0,Karachi,Month-to-month,49,89.03,2021-05-28,False
+CUST-1089,65.0,Karachi,Month-to-month,47,65.3,2022-09-16,False
+CUST-1056,35.0,Karachi,Month-to-month,60,68.15,2022-01-28,False
+CUST-1225,20.0,Multan,Month-to-month,3,55.42,2025-04-25,False
+CUST-1055,43.0,Islamabad,Month-to-month,6,85.4,2022-01-21,True
+CUST-1120,67.0,Karachi,One year,42,65.9,2023-04-21,False
+CUST-1122,48.0,Lahore,One year,61,72.14,2023-05-05,False
+CUST-1084,38.0,Lahore,One year,60,51.46,2022-08-12,False
+CUST-1053,65.0,Islamabad,Month-to-month,28,75.31,2022-01-07,False
+CUST-1238,,Lahore,Month-to-month,1,65.76,2025-07-25,True
+CUST-1138,34.0,Islamabad,Month-to-month,19,34.98,2023-08-25,True
+CUST-1244,29.0,Karachi,One year,28,60.46,2025-09-05,False
+CUST-1185,62.0,Islamabad,One year,69,70.25,2024-07-19,False
+CUST-1112,31.0,Lahore,Month-to-month,31,69.18,2023-02-24,True
+CUST-1243,47.0,Karachi,One year,57,,2025-08-29,False
+CUST-1042,24.0,Islamabad,One year,69,69.16,2021-10-22,False
+CUST-1017,48.0,Lahore,One year,55,54.21,2021-04-30,False
+CUST-1005,52.0,Multan,Month-to-month,11,85.9,2021-02-05,True
+CUST-1193,35.0,Faisalabad,Month-to-month,54,86.8,2024-09-13,True
+CUST-1256,64.0,Faisalabad,Month-to-month,19,79.38,2025-11-28,False
+CUST-1048,56.0,Islamabad,Month-to-month,47,84.36,2021-12-03,True
+CUST-1189,44.0,Lahore,One year,21,74.12,2024-08-16,False
+CUST-1210,35.0,Islamabad,Month-to-month,18,92.64,2025-01-10,False
+CUST-1066,33.0,Karachi,Two year,18,46.37,2022-04-08,False
+CUST-1070,63.0,Lahore,One year,45,55.26,2022-05-06,False
+CUST-1230,22.0,Lahore,One year,27,68.49,2025-05-30,False
+CUST-1130,42.0,Lahore,One year,45,65.16,2023-06-30,False
+CUST-1105,26.0,Islamabad,Month-to-month,35,70.2,2023-01-06,True
+CUST-1241,,Islamabad,Two year,53,72.71,2025-08-15,False
+CUST-1054,29.0,Unknown,Month-to-month,24,88.02,2022-01-14,True
+CUST-1228,19.0,Karachi,One year,68,42.16,2025-05-16,False
+CUST-1098,19.0,Lahore,Month-to-month,53,60.1,2022-11-18,False
+CUST-1169,21.0,Multan,Two year,69,25.67,2024-03-29,False
+CUST-1214,30.0,Islamabad,Month-to-month,47,69.5,2025-02-07,False
+CUST-1108,18.0,Lahore,Month-to-month,49,42.88,2023-01-27,True
+CUST-1154,47.0,Lahore,Month-to-month,38,61.29,2023-12-15,False
+CUST-1097,51.0,Lahore,One year,27,73.92,2022-11-11,False
+CUST-1195,40.0,Unknown,Month-to-month,25,65.02,2024-09-27,False
+CUST-1082,36.0,Faisalabad,Two year,20,36.21,2022-07-29,False
+CUST-1220,62.0,Lahore,Month-to-month,19,66.04,2025-03-21,False
+CUST-1094,29.0,Lahore,Month-to-month,44,71.83,2022-10-21,False
+CUST-1213,35.0,Faisalabad,Month-to-month,57,,2025-01-31,False
+CUST-1081,32.0,Karachi,Two year,6,73.86,2022-07-22,False
+CUST-1124,31.0,Lahore,Month-to-month,37,43.51,2023-05-19,True
+CUST-1170,64.0,Lahore,Two year,45,47.55,2024-04-05,False
+CUST-1171,54.0,Karachi,One year,56,49.86,2024-04-12,False
+CUST-1013,,Faisalabad,One year,69,70.92,2021-04-02,False
+CUST-1231,18.0,Karachi,One year,8,40.57,2025-06-06,True
+CUST-1177,38.0,Multan,One year,53,67.79,2024-05-24,False
+CUST-1045,,Faisalabad,Month-to-month,60,68.28,2021-11-12,True
+CUST-1172,41.0,Lahore,One year,33,63.67,2024-04-19,False
+CUST-1103,34.0,Multan,Month-to-month,60,70.44,2022-12-23,False
+CUST-1036,51.0,Lahore,Two year,51,52.62,2021-09-10,False
+CUST-1211,29.0,Karachi,Month-to-month,30,71.83,2025-01-17,False
+CUST-1245,48.0,Faisalabad,One year,4,66.94,2025-09-12,True
+CUST-1201,31.0,Multan,Month-to-month,56,76.32,2024-11-08,False
+CUST-1187,18.0,Lahore,One year,70,60.77,2024-08-02,False
+CUST-1075,67.0,Lahore,One year,35,62.41,2022-06-10,False
+CUST-1159,44.0,Islamabad,Two year,45,36.93,2024-01-19,True
+CUST-1227,25.0,Karachi,Month-to-month,27,64.23,2025-05-09,False
+CUST-1207,42.0,Islamabad,Two year,34,83.4,2024-12-20,False
+CUST-1242,22.0,Lahore,Two year,28,77.12,2025-08-22,False
+CUST-1002,54.0,Faisalabad,Month-to-month,30,55.79,2021-01-15,False
+CUST-1208,62.0,Lahore,Month-to-month,24,69.97,2024-12-27,False
+CUST-1006,31.0,Islamabad,Month-to-month,17,57.11,2021-02-12,True
+CUST-1221,55.0,Karachi,Month-to-month,66,68.51,2025-03-28,True
+CUST-1251,62.0,Faisalabad,Two year,61,41.79,2025-10-24,False
+CUST-1077,57.0,Islamabad,One year,42,60.35,2022-06-24,False
+CUST-1113,59.0,Karachi,Month-to-month,65,71.18,2023-03-03,False
+CUST-1065,18.0,Karachi,One year,13,66.36,2022-04-01,True
+CUST-1151,20.0,Faisalabad,One year,20,63.44,2023-11-24,False
+CUST-1160,59.0,Lahore,One year,63,51.48,2024-01-26,True
+CUST-1046,62.0,Karachi,Month-to-month,57,83.94,2021-11-19,False
+CUST-1074,64.0,Lahore,Month-to-month,14,43.93,2022-06-03,False
+CUST-1092,69.0,Karachi,One year,57,86.55,2022-10-07,False
+CUST-1191,43.0,Lahore,Two year,53,64.41,2024-08-30,False
+CUST-1087,34.0,Karachi,Month-to-month,46,89.98,2022-09-02,True
+CUST-1143,40.0,Karachi,Month-to-month,32,70.54,2023-09-29,True
+CUST-1182,33.0,Karachi,One year,69,78.31,2024-06-28,False
+CUST-1010,45.0,Karachi,Month-to-month,37,87.5,2021-03-12,False
+CUST-1162,20.0,Lahore,Month-to-month,70,77.78,2024-02-09,False
+CUST-1032,40.0,Lahore,Two year,54,77.17,2021-08-13,False
+CUST-1136,40.0,Multan,Two year,23,69.43,2023-08-11,False
+CUST-1166,,Faisalabad,Month-to-month,37,90.11,2024-03-08,False
+CUST-1083,64.0,Lahore,One year,18,56.68,2022-08-05,False
+CUST-1205,30.0,Lahore,One year,70,81.19,2024-12-06,False
+CUST-1165,23.0,Karachi,Two year,65,68.21,2024-03-01,False
+CUST-1155,21.0,Islamabad,Month-to-month,45,98.84,2023-12-22,False
+CUST-1100,,Faisalabad,Two year,63,46.93,2022-12-02,False
+CUST-1125,60.0,Karachi,Two year,8,,2023-05-26,True
+CUST-1023,64.0,Faisalabad,Month-to-month,51,88.91,2021-06-11,True
+CUST-1126,52.0,Unknown,One year,2,61.83,2023-06-02,False
+CUST-1009,62.0,Karachi,Month-to-month,9,76.2,2021-03-05,True
+CUST-1224,49.0,Lahore,Month-to-month,17,56.0,2025-04-18,True
+CUST-1104,27.0,Islamabad,One year,24,65.9,2022-12-30,False
+CUST-1153,30.0,Karachi,Two year,50,74.24,2023-12-08,False
+CUST-1199,61.0,Lahore,One year,3,15.0,2024-10-25,True
+CUST-1135,23.0,Lahore,Month-to-month,25,74.04,2023-08-04,False
+CUST-1111,47.0,Lahore,Month-to-month,36,49.81,2023-02-17,True
+CUST-1247,62.0,Karachi,Two year,17,53.7,2025-09-26,False
+CUST-1064,46.0,Karachi,Two year,22,43.21,2022-03-25,False
+CUST-1015,33.0,Lahore,Month-to-month,71,45.03,2021-04-16,False
+CUST-1041,25.0,Faisalabad,Month-to-month,71,52.5,2021-10-15,False
+CUST-1233,27.0,Karachi,Month-to-month,48,80.3,2025-06-20,False
+CUST-1109,32.0,Unknown,Two year,61,61.33,2023-02-03,False
+CUST-1080,68.0,Islamabad,Month-to-month,1,75.54,2022-07-15,True
+CUST-1052,43.0,Islamabad,Month-to-month,60,74.82,2021-12-31,False
+CUST-1026,,Karachi,Month-to-month,66,54.69,2021-07-02,False
+CUST-1076,68.0,Lahore,Month-to-month,71,70.43,2022-06-17,True
+CUST-1043,47.0,Lahore,One year,40,67.48,2021-10-29,False
+CUST-1024,63.0,Islamabad,One year,54,62.17,2021-06-18,False
+CUST-1196,46.0,Karachi,Two year,1,56.7,2024-10-04,True
+CUST-1003,64.0,Islamabad,Month-to-month,27,480.0,2021-01-22,False
+CUST-1223,25.0,Multan,Month-to-month,59,78.64,2025-04-11,False
+CUST-1049,48.0,Lahore,Month-to-month,11,70.54,2021-12-10,True
+CUST-1149,23.0,Lahore,Two year,1,30.5,2023-11-10,False
+CUST-1198,42.0,Lahore,One year,22,67.36,2024-10-18,False
+CUST-1131,27.0,Multan,Month-to-month,45,83.27,2023-07-07,False
+CUST-1250,,Unknown,Month-to-month,17,69.17,2025-10-17,True
+CUST-1030,41.0,Islamabad,Two year,48,51.28,2021-07-30,False
+CUST-1200,45.0,Islamabad,One year,37,37.87,2024-11-01,False
+CUST-1121,69.0,Karachi,Two year,36,37.89,2023-04-28,False
+CUST-1175,33.0,Lahore,Month-to-month,9,96.35,2024-05-10,True
+CUST-1115,58.0,Faisalabad,Month-to-month,42,,2023-03-17,True
+CUST-1229,,Lahore,One year,4,68.21,2025-05-23,True
+CUST-1216,,Lahore,Month-to-month,16,66.42,2025-02-21,True
+CUST-1008,39.0,Lahore,Month-to-month,48,78.95,2021-02-26,True
+CUST-1209,53.0,Karachi,One year,70,67.71,2025-01-03,False
+CUST-1060,22.0,Islamabad,Two year,35,,2022-02-25,False
+CUST-1128,31.0,Lahore,Month-to-month,71,68.55,2023-06-16,False
+CUST-1001,38.0,Karachi,Two year,61,,2021-01-08,False
+CUST-1057,24.0,Karachi,One year,54,44.58,2022-02-04,False
+CUST-1022,46.0,Multan,Month-to-month,11,73.57,2021-06-04,True
+CUST-1061,21.0,Unknown,Month-to-month,34,61.91,2022-03-04,True
+CUST-1063,28.0,Islamabad,One year,11,54.94,2022-03-18,False
+CUST-1007,30.0,Islamabad,Month-to-month,43,81.97,2021-02-19,True
+CUST-1137,51.0,Unknown,Month-to-month,14,63.96,2023-08-18,True
+CUST-1141,44.0,Karachi,Two year,66,44.19,2023-09-15,False
+CUST-1086,47.0,Islamabad,Two year,61,47.43,2022-08-26,False
+CUST-1096,50.0,Karachi,One year,52,106.5,2022-11-04,False
+CUST-1222,27.0,Islamabad,One year,32,65.12,2025-04-04,False
+CUST-1240,42.0,Faisalabad,One year,53,74.19,2025-08-08,False
+CUST-1215,66.0,Islamabad,Month-to-month,7,50.89,2025-02-14,True
+CUST-1068,68.0,Lahore,One year,67,65.82,2022-04-22,False
+CUST-1050,21.0,Lahore,Month-to-month,36,58.17,2021-12-17,False
+CUST-1142,66.0,Multan,One year,50,56.28,2023-09-22,False
+CUST-1157,41.0,Islamabad,One year,70,44.12,2024-01-05,False
+CUST-1156,69.0,Lahore,Month-to-month,51,66.84,2023-12-29,False
+CUST-1234,60.0,Multan,One year,55,67.24,2025-06-27,False
+CUST-1139,67.0,Lahore,Month-to-month,2,46.14,2023-09-01,True
+CUST-1212,56.0,Lahore,Month-to-month,6,55.97,2025-01-24,False
+CUST-1146,66.0,Lahore,Month-to-month,11,,2023-10-20,True
+CUST-1101,30.0,Islamabad,Month-to-month,25,63.14,2022-12-09,False
+CUST-1020,23.0,Islamabad,Month-to-month,55,94.21,2021-05-21,False
+CUST-1178,29.0,Faisalabad,One year,58,58.75,2024-05-31,False
+CUST-1025,27.0,Lahore,Month-to-month,28,72.84,2021-06-25,False
+CUST-1134,34.0,Karachi,Month-to-month,1,54.69,2023-07-28,True
+CUST-1237,23.0,Islamabad,One year,55,66.63,2025-07-18,False
+CUST-1071,35.0,Karachi,Month-to-month,17,90.13,2022-05-13,True
+CUST-1204,49.0,Lahore,One year,63,52.03,2024-11-29,False
+CUST-1129,58.0,Karachi,Two year,66,51.61,2023-06-23,False
+CUST-1144,25.0,Karachi,Two year,30,47.64,2023-10-06,False
+CUST-1192,19.0,Lahore,One year,69,68.87,2024-09-06,False
+CUST-1079,46.0,Islamabad,Two year,36,15.0,2022-07-08,False
+CUST-1133,47.0,Lahore,One year,13,45.59,2023-07-21,True
+CUST-1203,34.0,Lahore,Month-to-month,35,,2024-11-22,False
+CUST-1255,26.0,Islamabad,Month-to-month,37,74.76,2025-11-21,True
+CUST-1072,41.0,Faisalabad,One year,14,45.73,2022-05-20,False
+CUST-1235,19.0,Faisalabad,One year,51,70.85,2025-07-04,False
+CUST-1037,33.0,Unknown,Two year,12,49.16,2021-09-17,False
