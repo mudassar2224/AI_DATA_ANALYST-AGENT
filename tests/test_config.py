@@ -38,6 +38,21 @@ def test_openrouter_key_is_supported_as_secondary_provider():
     assert s.llm_provider_chain[-1] == ("openrouter", "or-key")
 
 
+def test_openrouter_defaults_to_free_model_router():
+    s = Settings(openrouter_model="")
+    assert s.openrouter_model == "openrouter/free"
+
+
+def test_legacy_unavailable_openrouter_model_migrates_to_free_router():
+    s = Settings(openrouter_model="openai/gpt-oss-20b:free")
+    assert s.openrouter_model == "openrouter/free"
+
+
+def test_custom_openrouter_model_is_preserved():
+    s = Settings(openrouter_model="meta-llama/llama-3.3-70b-instruct:free")
+    assert s.openrouter_model == "meta-llama/llama-3.3-70b-instruct:free"
+
+
 def test_multiple_fallback_keys_are_collected_in_order():
     s = Settings(
         groq_api_key="key-1",

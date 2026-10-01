@@ -166,7 +166,8 @@ and the test suite locally first:
    **Settings → Secrets** to use Groq, or add `OPENROUTER_API_KEY` for the
    secondary provider route. `GROQ_MODEL` defaults to
    `openai/gpt-oss-120b`; `OPENROUTER_MODEL` defaults to
-   `openai/gpt-oss-20b:free`.
+   `openrouter/free`, OpenRouter's free-model router. No OpenAI API key is
+   needed. Free model availability and rate limits are controlled by OpenRouter.
 8. Deploy. You'll get a `*.streamlit.app` URL.
 
 Community Cloud's free tier caps out around ~2.7 GB RAM / 2 CPU per app

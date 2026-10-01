@@ -10,7 +10,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 _ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
 
 _DEFAULT_GROQ_MODEL = "openai/gpt-oss-120b"
-_DEFAULT_OPENROUTER_MODEL = "openai/gpt-oss-20b:free"
+_DEFAULT_OPENROUTER_MODEL = "openrouter/free"
+_LEGACY_OPENROUTER_MODEL = "openai/gpt-oss-20b:free"
 
 
 class Settings(BaseSettings):
@@ -100,7 +101,10 @@ class Settings(BaseSettings):
     def _empty_openrouter_model_means_default(cls, value: str | None) -> str:
         if not value:
             return _DEFAULT_OPENROUTER_MODEL
-        return value
+        cleaned = value.strip()
+        if cleaned == _LEGACY_OPENROUTER_MODEL:
+            return _DEFAULT_OPENROUTER_MODEL
+        return cleaned
 
     @field_validator("sample_rows_if_large", mode="before")
     @classmethod
